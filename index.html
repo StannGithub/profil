@@ -1,130 +1,174 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Stanley Laguerre</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        .profile-photo {
-            margin: 20px auto;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 2px solid white;
-        }
-        .profile-photo img {
-            width: 100%;
-            height: auto;
-        }
-        section {
-            margin: 20px 0;
-        }
-        h2 {
-            color: #4CAF50;
-            margin-top: 20px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        footer {
-            margin-top: 30px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #777;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .service {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            margin: 10px;
-            width: 30%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stanley Laguerre - Développeur</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f0f2f5;
+      color: #333;
+    }
 
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .service {
-                width: 45%; /* Deux colonnes sur les écrans moyens */
-            }
-        }
+    header {
+      background: linear-gradient(to right, #18a4e0, #0e77b8);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
 
-        @media (max-width: 480px) {
-            .service {
-                width: 100%; /* Une colonne sur les petits écrans */
-            }
-            .profile-photo {
-                width: 120px;
-                height: 120px;
-            }
-        }
-    </style>
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: -75px auto 20px;
+      overflow: hidden;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: auto;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #18a4e0;
+      margin-bottom: 15px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service {
+      flex: 1 1 280px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #18a4e0;
+    }
+
+    .contact-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .contact-buttons a {
+      text-decoration: none;
+      background-color: #18a4e0;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact-buttons a:hover {
+      background-color: #0e77b8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Stanley Laguerre</h1>
-    <p>Développeur Web et Mobile</p>
+  <h1>Stanley Laguerre</h1>
+  <p>Développeur Web & Mobile</p>
 </header>
 
 <div class="profile-photo">
-    <img src="photo.jpeg" alt="Photo de Stanley Laguerre">
+  <img src="photo.jpeg" alt="Photo de Stanley Laguerre">
 </div>
 
-<section>
+<main>
+
+  <section>
     <h2>À propos de moi</h2>
-    <p>Je suis un développeur web et mobile passionné, spécialisé dans la création d'applications modulaires et évolutives. Avec une formation en génie informatique et plusieurs projets réussis, je m'engage à améliorer l'expérience utilisateur à travers des solutions technologiques innovantes.</p>
-</section>
+    <p>Je suis un développeur passionné spécialisé dans les technologies mobiles (Flutter) et web (Laravel, WordPress). Je crée des applications performantes, intuitives et axées sur l'expérience utilisateur.</p>
+  </section>
 
-<section>
-    <h2>Mes Services</h2>
+  <section>
+    <h2>Services</h2>
     <div class="services">
-        <div class="service">
-            <h3>Développement d'Applications Mobiles</h3>
-            <p>Création d'applications mobiles sur mesure avec Flutter, optimisées pour une expérience utilisateur fluide.</p>
-        </div>
-        <div class="service">
-            <h3>Développement Web</h3>
-            <p>Développement de sites web dynamiques et interactifs en utilisant Laravel et WordPress.</p>
-        </div>
-        <div class="service">
-            <h3>Consultation en Gestion de Projet</h3>
-            <p>Conseils et gestion de projets pour assurer la livraison dans les délais et le respect des budgets.</p>
-        </div>
+      <div class="service">
+        <h3>Développement Mobile</h3>
+        <p>Applications Flutter performantes pour Android & iOS.</p>
+      </div>
+      <div class="service">
+        <h3>Sites Web Modernes</h3>
+        <p>Sites dynamiques, SEO-friendly avec Laravel ou WordPress.</p>
+      </div>
+      <div class="service">
+        <h3>Conseil & Accompagnement</h3>
+        <p>Planification technique et suivi pour mener à bien vos projets.</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<section>
-    <h2>Projets Réalisés</h2>
-    <p>Concepteur et développeur de l'application mobile "Français Pratique", disponible sur le Google Play Store. Cette plateforme éducative aide à améliorer les compétences en français de manière pratique.</p>
-    <p>Disponible ici : <a href="https://play.google.com/store/apps/details?id=com.fp.lesprosfr" target="_blank">Français Pratique</a></p>
-</section>
+  <section>
+    <h2>Projets</h2>
+    <p>Développeur de l'application <strong>Français Pratique</strong>, une plateforme éducative disponible sur le Play Store.</p>
+    <div class="contact-buttons">
+      <a href="https://play.google.com/store/apps/details?id=com.fp.lesprosfr" target="_blank">Voir l'appli</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Pour toute collaboration ou information, n'hésitez pas à me contacter :</p>
+    <div class="contact-buttons">
+      <a href="mailto:stanleylaguerre11@gmail.com">📧 stanleylaguerre11@gmail.com</a>
+      <a href="mailto:stanleylaguerre901@gmail.com">📧 stanleylaguerre901@gmail.com</a>
+    </div>
+  </section>
+
+</main>
 
 <footer>
-    <p>&copy; 2024 Stanley Laguerre. Tous droits réservés.</p>
-    <p>Contact : <a href="mailto:stanleylaguerre11@gmail.com">stanleylaguerre11@gmail.com</a> | <a href="mailto:stanleylaguerre901@gmail.com">stanleylaguerre901@gmail.com</a></p>
+  <p>&copy; 2024 Stanley Laguerre – Tous droits réservés.</p>
 </footer>
 
 </body>
